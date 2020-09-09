@@ -119,8 +119,8 @@ Identifies tokens with tokenization open standards. A few rules will help custom
 - setSuffixPattern: Regex to identify subtokens that are in the end of the token. Regex has to end with `\\z` and must contain groups (). Each group will become a separate token within the prefix. Defaults to non-letter characters. e.g. quotes or parenthesis
 - setPrefixPattern: Regex to identify subtokens that come in the beginning of the token. Regex has to start with `\\A` and must contain groups (). Each group will become a separate token within the prefix. Defaults to non-letter characters. e.g. quotes or parenthesis
 - addInfixPattern: Add an extension pattern regex with groups to the top of the rules (will target first, from more specific to the more general).
-- minLength: Set the minimum allowed legth for each token
-- maxLength: Set the maximum allowed legth for each token
+- minLength: Set the minimum allowed length for each token
+- maxLength: Set the maximum allowed length for each token
 
 **Note:** all these APIs receive regular expressions so please make sure that you escape special characters according to Java conventions.  
 
